@@ -1,30 +1,68 @@
-
 <script>
-// Random Link Generator
+    var sites = [
+    'https://bit.ly/2XBUZSi',
+'https://bit.ly/2yDKntC',
+'https://bit.ly/3d5zQpM',
+'https://bit.ly/2ZCJ2OH',
+'https://bit.ly/2M1Ztw1',
+'https://bit.ly/3eohmRV',
+'https://bit.ly/2zo2FiZ',
+'https://bit.ly/2XtTlSp',
+'https://bit.ly/2LZgE1d',
+'https://bit.ly/2XwMjw9',
+'https://bit.ly/2AVxsno',
+'https://bit.ly/36tazUe',
+'https://bit.ly/3em45t2',
+'https://bit.ly/36vnPaR',
+'https://bit.ly/3d5pq9I',
+'https://bit.ly/36vnHrT',
+'https://bit.ly/3c2c3G3',
+'https://bit.ly/3c4sMZa',
+'https://bit.ly/36vnO6N',
+'https://bit.ly/2X3ZaXM',
+'https://bit.ly/36yfWkN',
+'https://bit.ly/2TG74V7',
+'https://bit.ly/36wjjZw',
+'https://bit.ly/2ZCWPVy',
+'https://bit.ly/3bXj4be',
+'https://bit.ly/2yzr5FJ',
+'https://bit.ly/3c36bfG',
+'https://bit.ly/36vnOnj',
+'https://bit.ly/3gpn6fW',
+'https://bit.ly/2LYHOFp',
+'https://bit.ly/2AbF6tq',
+'https://bit.ly/3d4PWA3',
+'https://bit.ly/3dglsvj',
+'https://bit.ly/3el8OLm',
+'https://bit.ly/3d5kaDd',
+'https://bit.ly/36vnNzL',
+'https://bit.ly/2TFWc9R',
+'https://bit.ly/3d2pEyo',
+'https://bit.ly/2XwuGg3',
+'https://bit.ly/2XtTfKx',
+'https://bit.ly/2LW7jHz',
+'https://bit.ly/3dglkfj',
+'https://bit.ly/2yxzfhG',
+'https://bit.ly/2M17Xn6',
+'https://bit.ly/2X3DYRD',
+'https://bit.ly/2X2zdrH',
+'https://bit.ly/2ZBZ4bv',
+'https://bit.ly/3c5JhEx',
+'https://bit.ly/2X0DDiM',
+'https://bit.ly/3c7y2vg',
+'https://bit.ly/2yD5pZk',
+'https://bit.ly/3c36jvG',
+'https://bit.ly/2X0HP22',
+'https://bit.ly/2M0DjKs',
+'https://bit.ly/2A739tC',
+'https://bit.ly/36uqGkt',
+'https://bit.ly/2M3bv88',
+'https://bit.ly/2ZP9RPZ'        
+    ];
 
-// Array with random links is created. You can add as many links as you want/need.
-
-/* You can use more than one method to create an array, I will show you two examples */
-
-// Condensed Array
-
-var random = new Array("http://google.com", "http://yahoo.com", "http://bing.com", "http://cnn.com");
-
-// or
-
-// Regular Array
-
-var random = new Array();
-
-random[0] = "http://google.com";
-random[1] = "http://yahoo.com";
-random[2] = "http://bing.com";
-random[3] = "http://cnn.com";
-
-function randomlink() {
-window.location = random[Math.floor(Math.random()*random.length)];
-}
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
 </script>
-
-// HTML
-<a href="javascript:randomlink()">Click here for random link</a>
+<a href="#" onclick="randomSite();">Random</a>
