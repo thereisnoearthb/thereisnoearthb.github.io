@@ -1,0 +1,14 @@
+<script>
+    var sites = [
+     'https://bit.ly/2XBUZSi',
+'https://thereisnoearthb.com',
+'https://thereisnoearthb.org'
+ 
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<body onload='randomSite()'>
