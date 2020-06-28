@@ -1,0 +1,12 @@
+<script>
+    var sites = [
+'https://twitter.com/intent/tweet?text=Too%20Eager%20wait%20till%204pm%20na%20%23NOEIADilution%20%23ScrapEIADraft2020&related=thereisnoearthb'
+
+];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<body onload='randomSite()'>
