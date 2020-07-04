@@ -1,1 +1,14 @@
-See you at 5pm 5th July
+<script>
+    var sites = [
+
+'http://thereisnoearthb.com/AareyBachaoTweets1',
+'http://thereisnoearthb.com/AareyBachaoTweets2',
+'http://thereisnoearthb.com/AareyBachaoTweets3'
+];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<body onload='randomSite()'>
