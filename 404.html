@@ -20,7 +20,7 @@
 
   //Get Handle
   var str = window.location.href;
-  var pos = str.indexOf(".io/");
+  var pos = str.indexOf("com/");
  // document.write(pos+4); //Using document.write() after an HTML document is loaded, will delete all existing HTML:
   var InstaHandle = str.slice(pos+4);
   document.getElementById("userName").innerHTML = "@"+InstaHandle ;
