@@ -22,8 +22,8 @@ body{
 #rainbow {
     transform: skewY(-15deg);
     position: absolute;
-    width: 120%;
-    top: 25%;
+    width: 100%;
+    top: 31%;
     z-index: -1;
     box-shadow:
     0 0 0 35px #E03A3E,
