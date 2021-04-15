@@ -1,1 +1,29 @@
-<meta http-equiv="Refresh" content="0; url=https://thereisnoearthb.com/fundraiser.html" />
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<body>
+  <a href="https://www.ThereIsNoEarthB.com/" id="userName">@ThereIsNoEarthB</a>
+  <script>
+
+  //Get Handle
+  var str = window.location.href;
+  var pos = str.indexOf("com/");
+ // document.write(pos+4); //Using document.write() after an HTML document is loaded, will delete all existing HTML:
+  var InstaHandle = str.slice(pos+4);
+  document.getElementById("userName").innerHTML = "@"+InstaHandle ;
+  document.getElementById("userName").href = "https://thereisnoearthb.org/"+InstaHandle ;
+  window.location.replace("https://thereisnoearthb.org/"+InstaHandle );
+  //document.write(InstaHandle);
+
+  </script>
+
+
+</body>
+
+</html>
+
+
+<!--<meta http-equiv="Refresh" content="0; url=https://thereisnoearthb.com/fundraiser.html" />
+-->
