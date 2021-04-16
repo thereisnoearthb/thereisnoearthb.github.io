@@ -33,41 +33,17 @@
     <div id="links">
          <iframe width=100% loading="lazy" height=100% src="https://www.youtube.com/embed/-C1iI1NG0Yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
-         <a class="link" id = "Button1" href="" target="_blank">Loading<br>Awesomeness</a>
-         <a class="link" id = "Button2" href="" target="_blank">...........................</a>
-         <a class="link" id = "Button3" href="" target="_blank">.........................</a>
-         <a class="link" id = "Button4" href="" target="_blank">.......................</a>
-         <a class="link" id = "Button5" href="" target="_blank">.....................</a>
-         <a class="link" id = "Button6" href="" target="_blank">...................</a>
-         <a class="link" id = "Button7" href="" target="_blank">.................</a>
-         <a class="link" id = "Button8" href="" target="_blank">...............</a>
-         <a class="link" id = "Button9" href="" target="_blank">.............</a>
-         <a class="link" id = "Button10" href="" target="_blank">...........</a>
-         <a class="link" id = "Button11" href="" target="_blank">.........</a>
-         <a class="link" id = "Button12" href="" target="_blank">.......</a>
-         <a class="link" id = "Button13" href="" target="_blank">.....</a>
-         <a class="link" id = "Button14" href="" target="_blank">...</a>
-         <a class="link" id = "Button15" href="" target="_blank">.</a>
+         <a class="link" id = "SaveSattal" href="SaveSattal" target="_blank">Save Sattal</a>
+         <a class="link" id = "SaveDumna" href="SaveDumna" target="_blank">Save Dumna</a>
+         <a class="link" id = "" href="http://youtube.com/playlist?list=PLLjoXJQvG3P3uGxVFzKLRGviHBeU_473v" target="_blank">It's tough to deal with #EcoAnxiety in this apathetic world. So here's the compilation of all the guided meditations conducted by counseling psychologists Saumya and Agrima for the TINEB well being program. Take care #ThereIsNoComradeB Share away!</a>
+         <a class="link" id = "" href="https://t.me/thereisnoearthb" target="_blank">Join us on Telegram!<br><br> Incase the link does not work (you're using j!o aren't you?) search for @ThereIsNoEarthB and join the channel</a>
+         <a class="link" id = "Write to us" href="mailto:hope@thereisnoearthb.com" target="_blank">Write to us</a>
+         <a class="link" id = "" href="https://twitter.com/thereisnoearthb" target="Join us on Twitter"></a>
+         <a class="link" id = "" href="" target="_blank">We do not have any political or religious affiliations</a>
+        
 
     </div>
 
-    <script>
-        var sheetreq = new XMLHttpRequest();
-        sheetreq.overrideMimeType("application/json");
-        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1Ja1SnHUj9CLzj7LOUXI1_UlWNGZGTYdRWk3ZvaFpziU/1/public/full?alt=json", true);
-        sheetreq.onload  = function() {
-           var jsonResponse = JSON.parse(sheetreq.responseText);
-           // do something with jsonResponse
-             var i;
-             for (i = 2; i < 32 ; i+=2)
-                  {
-                    document.getElementById("Button"+(i/2)).innerHTML = jsonResponse.feed.entry[i].content.$t;
-                    document.getElementById("Button"+(i/2)).href = jsonResponse.feed.entry[i+1].content.$t;
-                  }
-
-        };
-        sheetreq.send(null);
-    </script>
 
 </body>
 </html>
