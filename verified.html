@@ -71,7 +71,7 @@
            var jsonResponse = JSON.parse(sheetreq.responseText);
            // do something with jsonResponse
              var i;
-             for (i = 12; i < 132 ; i+=7)
+             for (i = 12,j=1; i < 132 ; i+=7,j+=1)
                   {
                     document.getElementById("Button"+(i/2)).innerHTML = jsonResponse.feed.entry[i].content.$t;
                     document.getElementById("Button"+(i/2)).href = jsonResponse.feed.entry[i+1].content.$t;
