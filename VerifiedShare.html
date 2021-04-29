@@ -253,8 +253,8 @@
            var i;
            for (i = 0,j=1; i < 12400000 ; i+=7 ,j+=1)
                 {
-                  document.getElementById("Button"+(j)).innerHTML = (jsonResponse.feed.entry[i+1].content.$t);
-                  document.getElementById("Button"+(j)).href = "tel:"+jsonResponse.feed.entry[i].content.$t;
+                  document.getElementById("Button"+(j)).innerHTML = jsonResponse.feed.entry[i+1].content.$t;
+                  document.getElementById("Button"+(j)).href = jsonResponse.feed.entry[i].content.$t;
                 }
 
         };
