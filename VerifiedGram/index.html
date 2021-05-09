@@ -46,7 +46,7 @@
         <textarea rows="4" cols="36"></textarea>
 <br>
 
-        
+
         <a id="download" download="poster.png">
           <button class="button button1" onClick="generate()">Generate</button>
 
@@ -61,5 +61,28 @@
 
 
     <script src="script.js"></script>
+    <script>
+
+    //Get Handle
+
+
+        var sheetreq = new XMLHttpRequest();
+        sheetreq.overrideMimeType("application/json");
+        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1s_b8BT6a36gJs5LcJNSuUEFMpa4fQJY0nyYOQytu0A4/2/public/full?alt=json", true);
+        sheetreq.onload  = function() {
+           var jsonResponse = JSON.parse(sheetreq.responseText);
+           // do something with jsonResponse
+
+           var str = window.location.href;
+           var pos = str.indexOf("?");
+          // document.write(pos+4); //Using document.write() after an HTML document is loaded, will delete all existing HTML:
+           var i = parseInt(str.slice(pos+1));
+
+           document.getElementById("quote__text").innerHTML = (jsonResponse.feed.entry[i+3].content.$t+"<br>"+jsonResponse.feed.entry[i+2].content.$t+"<br>Tap to call:"+jsonResponse.feed.entry[i+1].content.$t+"<br>"+"Verified by:@"+jsonResponse.feed.entry[i+4].content.$t+"<br>"+jsonResponse.feed.entry[i].content.$t);
+
+
+        };
+        sheetreq.send(null);
+    </script>
 </body>
 </html>
