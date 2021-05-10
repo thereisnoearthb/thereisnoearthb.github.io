@@ -43,7 +43,7 @@
             <img src="images/background.png">
         </div>
         <br>
-        <textarea rows="4" cols="36"></textarea>
+        <textarea rows="4" cols="36" id="quote__textbox"></textarea>
 <br>
 
 
@@ -79,6 +79,7 @@
            var i = parseInt(str.slice(pos+1));
 
            document.getElementById("quote__text").innerHTML = (jsonResponse.feed.entry[i+3].content.$t+"<br>"+jsonResponse.feed.entry[i+2].content.$t+"<br>Tap to call:"+jsonResponse.feed.entry[i+1].content.$t+"<br>"+"Verified by:@"+jsonResponse.feed.entry[i+4].content.$t+"<br>"+jsonResponse.feed.entry[i].content.$t);
+           document.getElementById("quote__textbox").innerHTML = (jsonResponse.feed.entry[i+3].content.$t+"<br>"+jsonResponse.feed.entry[i+2].content.$t+"<br>Tap to call:"+jsonResponse.feed.entry[i+1].content.$t+"<br>"+"Verified by:@"+jsonResponse.feed.entry[i+4].content.$t+"<br>"+jsonResponse.feed.entry[i].content.$t);
 
 
         };
