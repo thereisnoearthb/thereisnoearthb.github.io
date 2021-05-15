@@ -57,7 +57,7 @@ html section button.dotted.thick, body section button.dotted.thick {
   border: dotted 5px #41403E;
 }
 html section button.dashed.thick, body section button.dashed.thick {
-  border: dashed 5px #41403E;
+  border: dashed 5px #41403E;border-radius: 100%;
 }
 html section button.lined.thin, body section button.lined.thin {
   border: solid 2px #41403E;
