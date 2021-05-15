@@ -11,7 +11,7 @@ html, body {
   justify-content: center;
   background: #F0F0D8;
   word-break:break-word;
-  font-family: 'Patrick Hand SC', cursive;
+  font-family: 'Patrick Hand SC';
 }
 html h1, body h1 {
   margin-top: -5rem;
