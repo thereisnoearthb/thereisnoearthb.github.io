@@ -14,10 +14,10 @@ html, body {
   font-family: 'Patrick Hand SC';
 }
 html h1, body h1 {
-  margin-top: -5rem;
+  margin-top: 2.5rem;
   text-align: center;
   color: #41403E;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 html section, body section {
   display: flex;
@@ -25,7 +25,7 @@ html section, body section {
   justify-content: center;
   width: 100%;
   min-height: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 html section button, body section button {
   align-self: center;
