@@ -755,44 +755,29 @@
 
 
     <script>
-        var sheetreq = new XMLHttpRequest();
-        sheetreq.overrideMimeType("application/json");
-        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1s_b8BT6a36gJs5LcJNSuUEFMpa4fQJY0nyYOQytu0A4/2/public/full?alt=json", true);
-        sheetreq.onload  = function() {
-           var jsonResponse = JSON.parse(sheetreq.responseText);
-           // do something with jsonResponse
-           var i;
-           for (i = 0,j=1; i < 12400000 ; i+=5  ,j+=1)
-                {
-                  document.getElementById("Button"+(j)+"Text").innerHTML = (jsonResponse.feed.entry[i+3].content.$t+"<br>"+jsonResponse.feed.entry[i+2].content.$t+"<br>Tap to call:"+jsonResponse.feed.entry[i+1].content.$t+"<br>"+"Verified by:@"+jsonResponse.feed.entry[i+4].content.$t+"<br>"+jsonResponse.feed.entry[i].content.$t);
-                  document.getElementById("Button"+(j)+"Link").href = "tel:"+jsonResponse.feed.entry[i+1].content.$t;
-                  document.getElementById("GramButton"+(j)).href = "https://thereisnoearthb.com/VerifiedGram/index.html?"+(i);
-                }
+      var sheetreq = new XMLHttpRequest();
+      sheetreq.overrideMimeType("application/json");
+      sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1s_b8BT6a36gJs5LcJNSuUEFMpa4fQJY0nyYOQytu0A4/6/public/full?alt=json", true);
+      sheetreq.onload  = function() {
+         var jsonResponse = JSON.parse(sheetreq.responseText);
+         // do something with jsonResponse
+         var i;
+         for (i = 0,j=1; i < 124000000 ; i+=7  ,j+=1)
+              {
+                document.getElementById("Button"+(j)+"Text").innerHTML = (jsonResponse.feed.entry[i+3].content.$t+"<br>"+jsonResponse.feed.entry[i+2].content.$t+"<br>Tap to call:"+jsonResponse.feed.entry[i+1].content.$t+"<br>"+"Verified by:@"+jsonResponse.feed.entry[i+4].content.$t+"<br>"+jsonResponse.feed.entry[i].content.$t);
+                document.getElementById("Button"+(j)+"Link").href = "tel:"+jsonResponse.feed.entry[i+1].content.$t;
+                document.getElementById("WhatsAppButton"+(j)).href = jsonResponse.feed.entry[i+5].content.$t;
+                document.getElementById("TweetButton"+(j)).href = jsonResponse.feed.entry[i+6].content.$t;
+                document.getElementById("GramButton"+(j)).href = "https://thereisnoearthb.com/VerifiedGram/index.html?"+((j-1)*5);
+              }
 
-        };
-        sheetreq.send(null);
-    </script>
-
-    <script>
-            var sheetreq2 = new XMLHttpRequest();
-            sheetreq2.overrideMimeType("application/json");
-            sheetreq2.open('GET', "https://spreadsheets.google.com/feeds/cells/1s_b8BT6a36gJs5LcJNSuUEFMpa4fQJY0nyYOQytu0A4/3/public/full?alt=json", true);
-            sheetreq2.onload  = function() {
-               var jsonResponse = JSON.parse(sheetreq2.responseText);
-               // do something with jsonResponse
-               var i;
-               for (i = 0,j=1; i < 12400000 ; i+=7 ,j+=1)
-                    {
-                      document.getElementById("WhatsAppButton"+(j)).href = jsonResponse.feed.entry[i].content.$t;
-                      document.getElementById("TweetButton"+(j)).href = jsonResponse.feed.entry[i+3].content.$t;
-                    }
-
-            };
-            sheetreq2.send(null);
-        </script>
+      };
+      sheetreq.send(null);
+  </script>
 
 
 </body>
+</html>
 
 
 
