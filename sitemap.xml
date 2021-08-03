@@ -9,48 +9,123 @@
 
 <url>
   <loc>https://thereisnoearthb.com/</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://thereisnoearthb.com/verified</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <loc>https://thereisnoearthb.com/verified/</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/shoutout</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://thereisnoearthb.com/dilli</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://thereisnoearthb.com/lucknow</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/bhopal</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/jabalpur</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://thereisnoearthb.com/noida</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://thereisnoearthb.com/mumbai</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://thereisnoearthb.com/kanpur</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://thereisnoearthb.com/bangalore</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://thereisnoearthb.com/remdesivir</loc>
-  <lastmod>2021-04-19T13:46:46+00:00</lastmod>
+  <loc>https://thereisnoearthb.com/CovidMonitoringSheet</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/mentions.html</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/StudentAssistance</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/verified/ambulance/index.html</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/verified</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/All-compiled-lists-1.pdf</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/remdesivir</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/verified/ambulance/delhi.html</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/verified/ambulance/uttarpradesh.html</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/verified/ambulance/ukhpjk.html</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/verified/ambulance/maharashtra.html</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/verified/ambulance/other.html</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://thereisnoearthb.com/verifiedbackup</loc>
+  <lastmod>2021-08-01T14:28:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
