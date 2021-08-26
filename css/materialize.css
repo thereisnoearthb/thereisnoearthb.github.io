@@ -644,11 +644,11 @@
 }
 
 .blue {
-  background-color: #2196F3 !important;
+  background-color: #062E77/*#2196F3*/ !important;
 }
 
 .blue-text {
-  color: #2196F3 !important;
+  color: #062E77/*#2196F3*/ !important;
 }
 
 .blue.lighten-5 {
@@ -1428,11 +1428,11 @@
 }
 
 .yellow {
-  background-color: #ffeb3b !important;
+  background-color: #E1D3B6 /*#ffeb3b*/ !important;
 }
 
 .yellow-text {
-  color: #ffeb3b !important;
+  color: #E1D3B6 /*#ffeb3b*/ !important;
 }
 
 .yellow.lighten-5 {
