@@ -5,7 +5,7 @@
     --accentColor: white  /*#9bff00/*#30cf8c*/;
     --accentColor2: black;
     --accentColor3:#54E47A;
-    --font: "Times New Roman", Times, serif;
+    --font: "playfair display";
 }
 
 body{
@@ -52,7 +52,8 @@ body{
     margin-bottom: 20px;
     padding: 17px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
     transition: all .25s cubic-bezier(.08,.59,.29,.99);
     border: solid var(--accentColor2) 2px;
 
