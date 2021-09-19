@@ -2910,8 +2910,8 @@ div#respond {
 .site-footer {
   padding-top: 1.5em;
   padding-bottom: 2.25em;
-  background: #171617;
-  color: #8c888c;
+  background: white/*#171617*/;
+  color: black/*#8c888c*/;
   overflow: hidden;
   -webkit-font-smoothing: auto;
   position: relative;
