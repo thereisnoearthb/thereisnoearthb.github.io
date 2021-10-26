@@ -15,291 +15,57 @@
 <h2>Tweetdeck generation</h2>
 </center>
   <div class="row">
-    <div class="input-field col s6 offset-s3">
-      <input value="#ThereIsNoEarthB" id="hashtag" type="text" class="validate">
+    <div class="input-field col s4 offset-s4">
+      <input value="#ThereIsNoEarthB" onkeyup="charcountupdate(this.value)" id="hashtag" type="text" class="validate" maxLength="280" data-length="280">
       <label class="active" for="hashtag">Hashtag</label>
+
     </div>
+    <h6><div class="input-field col s4 offset-s4">
+      <a id="charactersleft">
+      </a> characters left per fact/demand
+</H6>
   </div>
 
-
-
+</div>
 <div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s3">
-          <input id="fact1" type="text" class="validate">
-          <label for="fact1">Fact 1</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand1" type="text" class="validate">
-          <label for="demand1">Demand 1</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture1" type="url" class="validate">
-          <label for="last_name">Pic link 1</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact2" type="text" class="validate">
-          <label for="fact2">Fact 2</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand2" type="text" class="validate">
-          <label for="demand2">Demand 2</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture2" type="url" class="validate">
-          <label for="picture2">Pic link 2</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact3" type="text" class="validate">
-          <label for="fact3">Fact 3</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand3" type="text" class="validate">
-          <label for="demand3">Demand 3</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture3" type="url" class="validate">
-          <label for="picture3">Pic link 3</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact4" type="text" class="validate">
-          <label for="fact4">Fact 4</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand4" type="text" class="validate">
-          <label for="demand4">Demand 4</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture4" type="url" class="validate">
-          <label for="picture4">Pic link 4</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact5" type="text" class="validate">
-          <label for="fact5">Fact 5</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand5" type="text" class="validate">
-          <label for="demand5">Demand 5</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture5" type="url" class="validate">
-          <label for="picture5">Pic link 5</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact6" type="text" class="validate">
-          <label for="fact6">Fact 6</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand6" type="text" class="validate">
-          <label for="demand6">Demand 6</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture6" type="url" class="validate">
-          <label for="picture6">Pic link 6</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact7" type="text" class="validate">
-          <label for="fact7">Fact 7</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand7" type="text" class="validate">
-          <label for="demand7">Demand 7</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture7" type="url" class="validate">
-          <label for="picture7">Pic link 7</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact8" type="text" class="validate">
-          <label for="fact8">Fact 8</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand8" type="text" class="validate">
-          <label for="demand8">Demand 8</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture8" type="url" class="validate">
-          <label for="picture8">Pic link 8</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact9" type="text" class="validate">
-          <label for="fact9">Fact 9</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand9" type="text" class="validate">
-          <label for="demand9">Demand 9</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture9" type="url" class="validate">
-          <label for="picture9">Pic link 9</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact10" type="text" class="validate">
-          <label for="fact10">Fact 10</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand10" type="text" class="validate">
-          <label for="demand10">Demand 10</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture10" type="url" class="validate">
-          <label for="picture10">Pic link 10</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact11" type="text" class="validate">
-          <label for="fact11">Fact 11</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand11" type="text" class="validate">
-          <label for="demand11">Demand 11</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture11" type="url" class="validate">
-          <label for="picture11">Pic link 11</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact12" type="text" class="validate">
-          <label for="fact12">Fact 12</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand12" type="text" class="validate">
-          <label for="demand12">Demand 12</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture12" type="url" class="validate">
-          <label for="picture12">Pic link 12</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact13" type="text" class="validate">
-          <label for="fact13">Fact 13</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand13" type="text" class="validate">
-          <label for="demand13">Demand 13</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture13" type="url" class="validate">
-          <label for="picture13">Pic link 13</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact14" type="text" class="validate">
-          <label for="fact14">Fact 14</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand14" type="text" class="validate">
-          <label for="demand14">Demand 14</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture14" type="url" class="validate">
-          <label for="picture14">Pic link 14</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact15" type="text" class="validate">
-          <label for="fact15">Fact 15</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand15" type="text" class="validate">
-          <label for="demand15">Demand 15</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture15" type="url" class="validate">
-          <label for="picture15">Pic link 15</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact16" type="text" class="validate">
-          <label for="fact16">Fact 16</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand16" type="text" class="validate">
-          <label for="demand16">Demand 16</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture16" type="url" class="validate">
-          <label for="picture16">Pic link 16</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact17" type="text" class="validate">
-          <label for="fact17">Fact 17</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand17" type="text" class="validate">
-          <label for="demand17">Demand 17</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture17" type="url" class="validate">
-          <label for="picture17">Pic link 17</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact18" type="text" class="validate">
-          <label for="fact18">Fact 18</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand18" type="text" class="validate">
-          <label for="demand18">Demand 18</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture18" type="url" class="validate">
-          <label for="picture18">Pic link 18</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="fact19" type="text" class="validate">
-          <label for="fact19">Fact 19</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand19" type="text" class="validate">
-          <label for="demand19">Demand 19</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture19" type="url" class="validate">
-          <label for="picture19">Pic link 19</label>
-        </div>
-
-
-        <div class="input-field col s3">
-          <input id="fact20" type="text" class="validate">
-          <label for="fact20">Fact 20</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="demand20" type="text" class="validate">
-          <label for="demand20">Demand 20</label>
-        </div>
-        <div class="input-field col s3">
-          <input id="picture20" type="url" class="validate">
-          <label for="picture20">Pic link 20</label>
-        </div>
+        <div class="input-field col s4">             <textarea id="fact1" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 1</label>           </div>            <div class="input-field col s4">             <textarea id="demand1" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand1">Demand 1</label>           </div>            <div class="input-field col s4">             <input id="picture1" type="url" class="validate">             <label for="last_name">Pic link 1</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact2" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 2</label>           </div>            <div class="input-field col s4">             <textarea id="demand2" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand2">Demand 2</label>           </div>            <div class="input-field col s4">             <input id="picture2" type="url" class="validate">             <label for="last_name">Pic link 2</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact3" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 3</label>           </div>            <div class="input-field col s4">             <textarea id="demand3" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand3">Demand 3</label>           </div>            <div class="input-field col s4">             <input id="picture3" type="url" class="validate">             <label for="last_name">Pic link 3</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact4" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 4</label>           </div>            <div class="input-field col s4">             <textarea id="demand4" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand4">Demand 4</label>           </div>            <div class="input-field col s4">             <input id="picture4" type="url" class="validate">             <label for="last_name">Pic link 4</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact5" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 5</label>           </div>            <div class="input-field col s4">             <textarea id="demand5" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand5">Demand 5</label>           </div>            <div class="input-field col s4">             <input id="picture5" type="url" class="validate">             <label for="last_name">Pic link 5</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact6" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 6</label>           </div>            <div class="input-field col s4">             <textarea id="demand6" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand6">Demand 6</label>           </div>            <div class="input-field col s4">             <input id="picture6" type="url" class="validate">             <label for="last_name">Pic link 6</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact7" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 7</label>           </div>            <div class="input-field col s4">             <textarea id="demand7" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand7">Demand 7</label>           </div>            <div class="input-field col s4">             <input id="picture7" type="url" class="validate">             <label for="last_name">Pic link 7</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact8" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 8</label>           </div>            <div class="input-field col s4">             <textarea id="demand8" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand8">Demand 8</label>           </div>            <div class="input-field col s4">             <input id="picture8" type="url" class="validate">             <label for="last_name">Pic link 8</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact9" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 9</label>           </div>            <div class="input-field col s4">             <textarea id="demand9" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand9">Demand 9</label>           </div>            <div class="input-field col s4">             <input id="picture9" type="url" class="validate">             <label for="last_name">Pic link 9</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact10" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 10</label>           </div>            <div class="input-field col s4">             <textarea id="demand10" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand10">Demand 10</label>           </div>            <div class="input-field col s4">             <input id="picture10" type="url" class="validate">             <label for="last_name">Pic link 10</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact11" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 11</label>           </div>            <div class="input-field col s4">             <textarea id="demand11" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand11">Demand 11</label>           </div>            <div class="input-field col s4">             <input id="picture11" type="url" class="validate">             <label for="last_name">Pic link 11</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact12" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 12</label>           </div>            <div class="input-field col s4">             <textarea id="demand12" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand12">Demand 12</label>           </div>            <div class="input-field col s4">             <input id="picture12" type="url" class="validate">             <label for="last_name">Pic link 12</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact13" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 13</label>           </div>            <div class="input-field col s4">             <textarea id="demand13" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand13">Demand 13</label>           </div>            <div class="input-field col s4">             <input id="picture13" type="url" class="validate">             <label for="last_name">Pic link 13</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact14" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 14</label>           </div>            <div class="input-field col s4">             <textarea id="demand14" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand14">Demand 14</label>           </div>            <div class="input-field col s4">             <input id="picture14" type="url" class="validate">             <label for="last_name">Pic link 14</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact15" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 15</label>           </div>            <div class="input-field col s4">             <textarea id="demand15" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand15">Demand 15</label>           </div>            <div class="input-field col s4">             <input id="picture15" type="url" class="validate">             <label for="last_name">Pic link 15</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact16" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 16</label>           </div>            <div class="input-field col s4">             <textarea id="demand16" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand16">Demand 16</label>           </div>            <div class="input-field col s4">             <input id="picture16" type="url" class="validate">             <label for="last_name">Pic link 16</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact17" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 17</label>           </div>            <div class="input-field col s4">             <textarea id="demand17" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand17">Demand 17</label>           </div>            <div class="input-field col s4">             <input id="picture17" type="url" class="validate">             <label for="last_name">Pic link 17</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact18" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 18</label>           </div>            <div class="input-field col s4">             <textarea id="demand18" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand18">Demand 18</label>           </div>            <div class="input-field col s4">             <input id="picture18" type="url" class="validate">             <label for="last_name">Pic link 18</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact19" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 19</label>           </div>            <div class="input-field col s4">             <textarea id="demand19" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand19">Demand 19</label>           </div>            <div class="input-field col s4">             <input id="picture19" type="url" class="validate">             <label for="last_name">Pic link 19</label>           </div>           <br><br><br><br><br><br>
+<div class="input-field col s4">             <textarea id="fact20" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="fact1">Fact 20</label>           </div>            <div class="input-field col s4">             <textarea id="demand20" class="materialize-textarea" type="text" class="validate" maxLength="140" data-length="120"></textarea>             <label for="demand20">Demand 20</label>           </div>            <div class="input-field col s4">             <input id="picture20" type="url" class="validate">             <label for="last_name">Pic link 20</label>           </div>           <br><br><br><br><br><br>
 
 
               <center>
 
-                    <button  onclick="generateDeck(); return false; " class="btn waves-effect waves-light  btn-large" type="submit" name="action">Download
+                    <button  id="download" onclick="generateDeck(); return false; " class="btn waves-effect waves-light btn-large" type="submit" name="action">Download
                       <i class="material-icons right">download</i>
                     </button>
+
+
               </center>
       </div>
     </form>
   </div>
 
-  <p id="output"></p>
-
+<!--    <p id="output"></p>
+-->
   <!--
   <p>
       <textarea class="materialize-textarea" id="output"></textarea>
@@ -369,4 +135,24 @@ var PictureLinks = [];
 
 </body>
 <script src="https://thereisnoearthb.com/js/materialize.js"></script>
+<script>
+function x(){
+  var counter = document.querySelectorAll("input#hashtag, textarea#fact1, textarea#demand1,textarea#fact2, textarea#demand2,textarea#fact3, textarea#demand3,textarea#fact4, textarea#demand4,textarea#fact5, textarea#demand5,textarea#fact6, textarea#demand6,textarea#fact7, textarea#demand7,textarea#fact8, textarea#demand8,textarea#fact9, textarea#demand9,textarea#fact10, textarea#demand10,textarea#fact11, textarea#demand11,textarea#fact12, textarea#demand12,textarea#fact13, textarea#demand13,textarea#fact14, textarea#demand14,textarea#fact15, textarea#demand15,textarea#fact16, textarea#demand16,textarea#fact17, textarea#demand17,textarea#fact18, textarea#demand18,textarea#fact19, textarea#demand19,textarea#fact20, textarea#demand20e");
+  M.CharacterCounter.init(counter);
+}
+
+  document.addEventListener("DOMContentLoaded",x());
+
+  document.getElementById("charactersleft").innerHTML=  (280-(document.getElementById("hashtag").value.length)-24)/2;
+
+  function charcountupdate(str) {
+  document.getElementById("charactersleft").innerHTML=  (280-(document.getElementById("hashtag").value.length)-24)/2;
+  for (var i = 0; i < 20; i++) {
+  document.getElementById("demand"+(i+1)).maxLength= (280-(document.getElementById("hashtag").value.length)-24)/2;
+document.getElementById("fact"+(i+1)).maxLength= (280-(document.getElementById("hashtag").value.length)-24)/2;    }
+  x();
+}
+
+</script>
+
 </html>
