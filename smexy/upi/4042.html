@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body>
+      <p>If you don't use a UPI app you can copy paste:</p>
+      <br>
+      <p id="output"></p>
+
+
+<script language="JavaScript">
+
+window.$_GET = location.search.substr(1).split("&").reduce((o,i)=>(u=decodeURIComponent,[k,v]=i.split("="),o[u(k)]=v&&u(v),o),{});
+document.getElementById("output").innerHTML = $_GET.upi + " " + $_GET.name;
+
+
+
+      var sites = [
+
+'upi://pay?pa='+$_GET.upi+'&pn='+$_GET.name+'&cu=INR','gpay://upi/pay?pa='+$_GET.upi+'&pn='+$_GET.name+'&cu=INR'
+
+];
+
+
+        function randomSite() {
+            var i = parseInt(Math.random() * sites.length);
+            location.href = sites[i];
+
+
+
+            function gfg_Run() {
+              var iOS =
+                /iPad|iPhone|iPod/.test(navigator.userAgent) &&
+                !window.MSStream;
+
+                if (iOS) {
+                                  location.href = sites[1];;
+                                } else {
+                                  location.href = sites[0];
+                                }
+            }
+
+        }
+
+        var timer = setTimeout(function() {
+            window.location='https://instagram.com/thereisnoearthb'
+        }, 7000);
+
+</script>
+
+
+
+
+    <body onload='randomSite()'>
+</body>
+</html>
