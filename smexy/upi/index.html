@@ -43,7 +43,8 @@
     </form>
   </div>
 
-    <p id="output">Best used with the merchant UPI account such as the one provided with a milaap/ impactguru fundraiser.<br> The Link works in Gpay, BHIM, SBI and HDFC apps.</p>
+    <a href="https://thereisnoearthb.org/upi.html" id = "outputlink"><p id="output">Best used with the merchant UPI account such as the one provided with a milaap/ impactguru fundraiser.<br> The Link works in Gpay, BHIM, SBI and HDFC apps.</p>
+    </a>
 
     <div class="">
     <div class="card-panel yellow z-depth-1">
@@ -70,7 +71,7 @@ const p2 = "&name=";
 
 var FinalLink = p1 + UPI_ID + p2 + Name ;
 document.getElementById("output").innerHTML = FinalLink;
-
+document.getElementById("outputlink").href = FinalLink;
 }
 
 </script>
