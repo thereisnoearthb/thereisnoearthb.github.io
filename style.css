@@ -4,7 +4,8 @@
     --bgColor: white;
     --accentColor: white  /*#9bff00/*#30cf8c*/;
     --accentColor2: black;
-    --accentColor3:#54E47A;
+    --accentColor3: #E1D3B6;/*#54E47A;*/
+    --accentColor4: #062E77;
     --font: "Playfair Display";
 }
 
@@ -61,7 +62,7 @@ body{
 
 .link:hover{
     background-color: var(--accentColor3);
-    color: var(black);
+    color: var(--accentColor4);
 }
 
 
