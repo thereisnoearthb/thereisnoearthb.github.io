@@ -173,11 +173,12 @@ body{
   position: relative;
   border-radius: 8px;
   letter-spacing: 0.7px;
-  background-color: #5086bd;
+  background-color: var(--accentColor3);
 
-  color: #fff;
-  font-size: 21px;
-  font-family: "Lato", sans-serif;
+  color: var(--accentColor4);
+  font-size: 1.25rem;
+  font-family: var(--font);
+  font-weight: bold;
   cursor: pointer;
   box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
 }
