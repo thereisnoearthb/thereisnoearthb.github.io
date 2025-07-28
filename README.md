@@ -41,7 +41,3 @@ We are a passionate bunch of humans on a mission to save the Earth. This site is
 - Instagram: [@thereisnoearthb](https://instagram.com/thereisnoearthb)
 - Twitter: [@thereisnoearthb](https://twitter.com/thereisnoearthb)
 - Email: [hope@thereisnoearthb.com](mailto:hope@thereisnoearthb.com)
-
-## 📄 License
-
-This project is open source. See the [LICENSE](LICENSE) file for details.
