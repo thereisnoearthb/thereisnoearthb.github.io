@@ -1,0 +1,39 @@
+
+body {
+  margin: 0;
+  font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
+  color:#000000;
+  background-color: #272727;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+section img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+
+section #capture {
+  background-color: burlywood;
+  position: relative;
+  font-size: .6em;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+}
+
+section #capture #quote__text {
+  position: absolute;
+  top: 75px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

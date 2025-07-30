@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <meta name="title" content="Live Updating verified covid tap to call resources (PAN INDIA) ">
+    <meta name="description" content="This is a compilation of all peer verified covid phone numbers that have helped people (PAN INDIA)">
+    <meta name="keywords" content="Distributer, Indian, covid,  delhi, helpline,phone number, corona, UP, delhi, Uttarpradesh,Remdesivir, call, injection, cipla, oxygen, help, ramdesivir, updated, latest, hospital">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+
+    <meta property="og:title" content="Live Updating verified covid tap to call resources (PAN INDIA)" />
+    <meta property="og:description" content="This is a compilation of all peer verified covid phone numbers that have helped people (PAN INDIA)" />
+   <meta property="og:image"  content="http://thereisnoearthb.com/WebsiteImage.jpg" />
+   <meta property="og:image:secure_url"  content="https://thereisnoearthb.com/WebsiteImage.jpg"/>
+   <meta property="og:image:type" content="image/jpeg" />
+   <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../TINEB_LOGO.jpeg" type="image/x-icon"/>
+
+
+</head>
+<body>
+
+  <h1>There Is No Earth B</h1>
+
+  <section>
+        <a href="https://instagram.com/thereisnoearthb"><button class='lined thick'>Use<br><img src="../icons/whatsapp.svg" alt="WhatsApp icon" width="25" height="25"> <img src="../icons/twitter.svg" alt="Twitter icon" width="25" height="25"> <img src="../icons/instagram.svg" alt="Instagram icon" width="25" height="25"><br>Buttons to quickly share</button></a>
+
+        <a href="https://thereisnoearthb.org/upi"><button class='lined thick'>Contribute to keep us running<br>♡</button></a>
+
+  </section>
+
+  <section>
+
+      <a href="../CovidMonitoringSheet"><button class='lined thick'>Doctor endorsed covid patient monitoring sheet</button></a>
+      <a href="../StudentAssistance"><button class='lined thick'>Get help with Studies and Assignments</button></a>
+  
+ </section>
+
+  <section>
+      <a href="ambulance/index.html"><button class='lined thick'>State wise Ambulance</button></a>
+
+  </section>
+
+  <div id="divRepeat1">
+  <section>
+    <a id = "Button1Link" href=""><button id = "Button1Text" class='lined thick'>Loading Live Verified Data :)</button></a>
+  </section>
+  <section>
+
+    <a id = "WhatsAppButton1" href=""><button class='dashed thick'><img src="../icons/whatsapp.svg" alt="WhatsApp icon" width="25" height="25"></button></a>
+    <a id = "TweetButton1" href=""><button class='dashed thick'><img src="../icons/twitter.svg" alt="Twitter icon" width="25" height="25"></button></a>
+    <a id = "GramButton1" href=""><button class='dashed thick'><img src="../icons/instagram.svg" alt="Instagram icon" width="25" height="25"></button></a>
+
+  </section>
+
+</div>
+
+    <script>
+
+        function multiplyNode(elem, count, deep) {
+            for (var r = 0, copy; r < count - 1; r++) {
+              var elem = document.querySelector('#divRepeat'+(r+1));
+
+              var divName = document.querySelector('#divRepeat'+(r+1));
+              var ButtonLink = document.querySelector('#Button'+(r+1)+'Link');
+              var ButtonText = document.querySelector('#Button'+(r+1)+'Text');
+              var WhatsAppLink = document.querySelector('#WhatsAppButton'+(r+1));
+              var TweetLink = document.querySelector('#TweetButton'+(r+1));
+              var GramLink = document.querySelector('#GramButton'+(r+1));
+
+
+
+              // The copy
+              var copy = elem.cloneNode(deep);
+
+              // Modify the ID
+              divName.id = 'divRepeat'+(r+2);
+              ButtonLink.id = 'Button'+(r+2)+'Link';
+              ButtonText.id = 'Button'+(r+2)+'Text';
+              WhatsAppLink.id = 'WhatsAppButton'+(r+2);
+              TweetLink.id = 'TweetButton'+(r+2);
+              GramLink.id = 'GramButton'+(r+2);
+
+              // Insert into the DOM
+              elem.parentNode.insertBefore(copy, elem);
+
+            }
+        }
+
+    multiplyNode(document.querySelector('.divRepeat'), 1501, true);
+
+
+    </script>
+
+   
+    <script>
+        var sheetreq = new XMLHttpRequest();
+        sheetreq.overrideMimeType("application/json");
+        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1s_b8BT6a36gJs5LcJNSuUEFMpa4fQJY0nyYOQytu0A4/6/public/full?alt=json", true);
+        sheetreq.onload  = function() {
+           var jsonResponse = JSON.parse(sheetreq.responseText);
+           // do something with jsonResponse
+           var i;
+           for (i = 0,j=1; i < 124000000 ; i+=7  ,j+=1)
+                {
+                  document.getElementById("Button"+(j)+"Text").innerHTML = (jsonResponse.feed.entry[i+3].content.$t+"<br>"+jsonResponse.feed.entry[i+2].content.$t+"<br>Tap to call:"+jsonResponse.feed.entry[i+1].content.$t+"<br>"+"Verified by:@"+jsonResponse.feed.entry[i+4].content.$t+"<br>"+jsonResponse.feed.entry[i].content.$t);
+                  document.getElementById("Button"+(j)+"Link").href = "tel:"+jsonResponse.feed.entry[i+1].content.$t;
+                  document.getElementById("WhatsAppButton"+(j)).href = jsonResponse.feed.entry[i+5].content.$t;
+                  document.getElementById("TweetButton"+(j)).href = jsonResponse.feed.entry[i+6].content.$t;
+                  document.getElementById("GramButton"+(j)).href = "https://thereisnoearthb.com/VerifiedGram/index.html?"+((j-1)*5);
+                }
+
+        };
+        sheetreq.send(null);
+    </script>
+
+
+</body>
+
+</html>

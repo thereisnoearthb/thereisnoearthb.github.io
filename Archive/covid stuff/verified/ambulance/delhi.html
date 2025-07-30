@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <meta name="title" content="Live Updating verified covid tap to call resources (PAN INDIA) ">
+    <meta name="description" content="This is a compilation of all peer verified covid phone numbers that have helped people (PAN INDIA)">
+    <meta name="keywords" content="Distributer, Indian, covid,  delhi, helpline,phone number, corona, UP, delhi, Uttarpradesh,Remdesivir, call, injection, cipla, oxygen, help, ramdesivir, updated, latest, hospital">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+
+    <meta property="og:title" content="Live Updating verified covid tap to call resources (PAN INDIA)" />
+    <meta property="og:description" content="This is a compilation of all peer verified covid phone numbers that have helped people (PAN INDIA)" />
+   <meta property="og:image"  content="http://thereisnoearthb.com/WebsiteImage.jpg" />
+   <meta property="og:image:secure_url"  content="https://thereisnoearthb.com/WebsiteImage.jpg"/>
+   <meta property="og:image:type" content="image/jpeg" />
+   <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../../TINEB_LOGO.jpeg" type="image/x-icon"/>
+
+
+</head>
+<body>
+
+  <h1>Ambulance: Delhi</h1>
+
+
+  <div id="divRepeat1">
+  <section>
+    <a id = "Button1Link" href=""><button id = "Button1Text" class='lined thick'>Loading Live Verified Data :)</button></a>
+  </section>
+
+
+</div>
+
+    <script>
+
+        function multiplyNode(elem, count, deep) {
+            for (var r = 0, copy; r < count - 1; r++) {
+              var elem = document.querySelector('#divRepeat'+(r+1));
+
+              var divName = document.querySelector('#divRepeat'+(r+1));
+              var ButtonLink = document.querySelector('#Button'+(r+1)+'Link');
+              var ButtonText = document.querySelector('#Button'+(r+1)+'Text');
+
+
+
+
+              // The copy
+              var copy = elem.cloneNode(deep);
+
+              // Modify the ID
+              divName.id = 'divRepeat'+(r+2);
+              ButtonLink.id = 'Button'+(r+2)+'Link';
+              ButtonText.id = 'Button'+(r+2)+'Text';
+
+
+              // Insert into the DOM
+              elem.parentNode.insertBefore(copy, elem);
+
+            }
+        }
+
+    multiplyNode(document.querySelector('.divRepeat'), 201, true);
+
+
+    </script>
+
+
+
+    <script>
+        var sheetreq = new XMLHttpRequest();
+        sheetreq.overrideMimeType("application/json");
+        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1GKaHE9n8R8JmR_iCeX86T-bA4S0IcxUjQQwwtCY9ms0/1/public/full?alt=json", true);
+        sheetreq.onload  = function() {
+           var jsonResponse = JSON.parse(sheetreq.responseText);
+           // do something with jsonResponse
+           var i;
+           for (i = 7,j=1; i < 124000000 ; i+=6  ,j+=1)
+                {
+                  document.getElementById("Button"+(j)+"Text").innerHTML = (jsonResponse.feed.entry[i+1].content.$t+"<br>"+jsonResponse.feed.entry[i+4].content.$t+"<br>POC:"+jsonResponse.feed.entry[i+2].content.$t+" "+jsonResponse.feed.entry[i+3].content.$t+"<br>"+"Verified by:@"+jsonResponse.feed.entry[i+5].content.$t+"<br>"+jsonResponse.feed.entry[i].content.$t);
+                  document.getElementById("Button"+(j)+"Link").href = "tel:"+jsonResponse.feed.entry[i+3].content.$t;
+
+                }
+
+        };
+        sheetreq.send(null);
+    </script>
+
+
+</body>
+
+</html>
