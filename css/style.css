@@ -24,6 +24,11 @@ body {
 	align-items: center;
 }
 
+.container{
+	padding-left: 1.125em;
+	padding-right: 1.125em
+}
+
 #userPhoto {
 	width: 96px;
 	height: 96px; /*96*/
@@ -203,7 +208,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	margin-bottom: 20px;
+	margin: 16px 0;
 }
 
 #donate-btn {
